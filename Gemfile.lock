@@ -72,7 +72,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bundler
+  bundler (>= 2.0.2)
   jekyll (>= 3.8.4)
   jekyll-paginate
   jekyll-sitemap
