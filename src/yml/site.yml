@@ -1,0 +1,17 @@
+# Site Settings
+title: Gadgets by Dopetrope
+tagline: Technically Dope
+description: >-
+  Gadget by Dope-T-Rope is a Spin-off from Dopetrope project particularly focusing on Gadget Reviews and its News.Dopetrope is a Project Found For Sharing Tech News and Updates from various Tech Sources and Blogs.The latest tech news about the world's best (and sometimes worst) hardware, apps, and much more. 
+  From top companies like Google and Apple to tiny startups vying for your attention, Dopetrope has the latest in what matters in technology daily.
+seotags:
+  - Technology
+  - Tech news
+  - Gadget News
+  - Tech Blog
+  - Gadget Reviews
+  - Creators News
+show_hero: true
+email: tksudharshan@infozy.tk
+disqus_username: read-write-tech
+paginate: 21

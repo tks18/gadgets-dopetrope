@@ -1,20 +1,21 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<html lang="en">
-
-{% include head.html %}
-
-<body>
-
-  {% if site.google-analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
-  {% include loader.html %}
-  {% include header.html %}
-
-      {{ content }}
-
-  {% include footer.html %}
-  <script>
+<html lang="{{ site.language }}" class="no-js">
+    {% include head.html %}
+    <body class="main-page has-push-menu">
+        <!-- Google Tag Manager (noscript) -->
+        {% include gtag-body.html %}
+        <!-- End Google Tag Manager (noscript) -->
+        {% include svg-icons.html %}
+        {% include header.html %}
+            <section class="content">
+                {{ content }}
+            </section>
+        {% include footer.html %}
+        <script>
             if (window.netlifyIdentity) {
                 window.netlifyIdentity.on("init", function(user) {
                     if (!user) {
@@ -24,9 +25,7 @@
                     }
                 });
             }
- </script>
-  {% include javascripts.html %}
-
-</body>
-
+        </script>
+    </body>
 </html>
+

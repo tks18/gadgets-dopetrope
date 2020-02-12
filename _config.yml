@@ -1,72 +1,100 @@
-#-------------------------------
-# General Site Settings
+# Site Settings
+title: Gadgets by Dopetrope
+tagline: Technically Dope
+description: >-
+  Gadget by Dope-T-Rope is a Spin-off from Dopetrope project particularly focusing on Gadget Reviews and its News.Dopetrope is a Project Found For Sharing Tech News and Updates from various Tech Sources and Blogs.The latest tech news about the world's best (and sometimes worst) hardware, apps, and much more. 
+  From top companies like Google and Apple to tiny startups vying for your attention, Dopetrope has the latest in what matters in technology daily.
+seotags:
+  - Technology
+  - Tech news
+  - Gadget News
+  - Tech Blog
+  - Gadget Reviews
+  - Creators News
+show_hero: true
+email: tksudharshan@infozy.tk
+disqus_username: read-write-tech
+paginate: 21
 
-title: Tech-Bytes | Technology Bites
-description: Tech-Bytes is a Simple Blog for Some Cool Tech Tips to Make your Life More Productive and More Usefull.  # this means to ignore newlines until "baseurl:"
+
+# Social Media Settings
+# Remove the item if you don't need it
+github_username: tks18
+twitter_username: shantk18
+instagram_username: shantk18
+medium_username: tksudharshan
+
+
+# Theme Settings
+themeColor: '#fa163f'
+primaryDark: '#141414'
+accentDark: '#ffffff'
+lightGray: '#e4f9ff'
+texts: '#333333'
+
+
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: true
+show_modal_on_finish_post: true
+two_columns_layout: true
+
+
+# Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tech-bytes.tk" # the base hostname & protocol for your site, e.g. http://example.com
-email: tksudharshan@gmail.com
-
-#-------------------------------
-# About Section
-author-name:   Sudharshan TK
-author-avatar: profile.jpeg
+url: "https://dopetrope.tk" # the base hostname & protocol for your site
+google_analytics: "UA-156929545-1"
+language: "en"
 
 
-#-------------------------------
-# Contact links
-facebook:   
-twitter:   https://twitter.com/shantk18 
-instagram: https://www.instagram.com/shantk18 
-pinterest:  
-
-
-#-------------------------------
-# Comment Section (Disqus)
-disqus-identifier: read-write-tech # Add your shortname for Disqus Comment. For example mr-brown
-
-
-#-------------------------------
-# Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
-
-
-#-----------------u --------------
-# Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
-
-
-#-------------------------------
-# Newsletter
-mailchimp: https://gmail.us4.list-manage.com/subscribe/post?u=98556fb006c99e546c771ed9c&amp;id=53b6d6f1c6 # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-
-#-------------------------------
 # Build settings
 markdown: kramdown
-permalink: ':title/'
+highlighter: rouge
+permalink: /:title/
+collections:
+  authors:
+    output: true
+  category:
+    output: true
+paginate_path: "/page/:num/"
+
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
+
+# Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-paginate-content
 
-paginate: 7
-paginate_path: "/page/:num"
+# Exclude my node related stuff
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md',
+  'personal-token.txt',
+  '.npmrc',
+  'LICENSE'
+]
 
-include:
-  - _pages
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-
-#-------------------------------
-# Exclude from processing.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+timezone: Asia/Kolkata
