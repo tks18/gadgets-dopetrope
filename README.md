@@ -1,16 +1,16 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e9026d1f-b64a-416d-a1b1-257d71896f84/deploy-status)](https://app.netlify.com/sites/dope-t-rope/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e2c5c714-8d43-4b50-8530-27fff1d62317/deploy-status)](https://app.netlify.com/sites/gadgets-by-dopetrope/deploys)
 
 ###### Site is Back in Development
 
-# Dope-T-Rope - Feel the Magic of Technology
+# Gadgets by Dopetrope - Feel the Magic of Technology
 
 ![Logo](https://dopetrope.tk/assets/img/blog-image.png)
 
-See the [Website Here](https://readwritetech.tk/).
+See the [Website Here](https://gadgets.dopetrope.tk/).
 
 ## What is it?
 
-Dope-T-Rope is a Personal Tech Blog / News Website that Gets You Updated with Latest Techno News.
+Gadgets by Dope-T-Rope is a Personal Tech Blog / News Website that Gets You Updated with Latest Gadget News.
 
 ## Features
 
@@ -71,8 +71,8 @@ Dope-T-Rope is a Personal Tech Blog / News Website that Gets You Updated with La
 
 ## Questions?
 
-File a [GitHub issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
+File a [GitHub issue](https://github.com/tks18/dope-t-rope/issues/new) please.
 
 ## License
 
-*Dope-T-Rope* is available under the GNU license. See the [LICENSE](https://readwritetech.tk/license/) file for more info.
+*Gadgets* by *Dope-T-Rope* is available under the GNU license. See the [LICENSE](https://dopetrope.tk/license/) file for more info.
