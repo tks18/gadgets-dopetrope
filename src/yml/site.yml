@@ -16,7 +16,3 @@ email: tksudharshan@infozy.tk
 disqus_username: read-write-tech
 paginate: 21
 
-#CDN and Image Settings
-cdn: https://cdn.statically.io/img/
-image: infozy.tk/assets/img/
-
