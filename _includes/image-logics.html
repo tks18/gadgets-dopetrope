@@ -1,4 +1,4 @@
-<!-- Author Image Related Logics -->
+
 {% assign author_photo = '' %}
 {% if site.auto_webp_conversion %}
     {% if author.photo %}
@@ -11,9 +11,7 @@
         {% assign author_photo = "user.jpg" | prepend: site.image | prepend: site.cdn %}
     {% endif %}
 {% endif %}
-<!-- End of Author Image Related Logics -->
 
-<!-- Page Photo Logics -->
 {% assign page_photo = '' %}
 {% if site.auto_webp_conversion %}
     {% if page.photo %}
@@ -36,9 +34,7 @@
         {% assign page_photo = "user.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of Page Photo Logics -->
 
-<!-- Head Element Photo -->
 {% assign head_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if page.image %}
@@ -61,9 +57,7 @@
         {% assign head_image = "blog-image.png" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
     {% endif %}
 {% endif %}
-<!-- End of Head Image Logics -->
 
-<!-- Modal Image Logics -->
 {% assign modal_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if post.image %}
@@ -86,10 +80,7 @@
         {% assign modal_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of Modal Image Logics -->
 
-
-<!-- Recommendation Image Logics -->
 {% assign recommendation_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if recommendation.image %}
@@ -112,9 +103,7 @@
         {% assign recommendation_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of Recomendation Image Logics -->
 
-<!-- Category Hero Image -->
 {% assign categoryhero_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if page.image %}
@@ -137,9 +126,7 @@
         {% assign categoryhero_image = "blog-image.png" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
     {% endif %}
 {% endif %}
-<!-- End of Head Image Logics -->
 
-<!-- Category Post Image Logics -->
 {% assign category_post_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if post.image %}
@@ -162,9 +149,7 @@
         {% assign category_post_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of Category Post Image Logics -->
 
-<!-- Post Main Image -->
 {% assign postmain_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if page.image %}
@@ -187,9 +172,7 @@
         {% assign postmain_image = "blog-image.png" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
     {% endif %}
 {% endif %}
-<!-- End of Post Main Image Logics -->
 
-<!-- Post Featured Image Image -->
 {% assign postfeatured_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if page.image %}
@@ -212,9 +195,7 @@
         {% assign postfeatured_image = "blog-image.png" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of Post Featured Image Logics -->
 
-<!-- RSS Feed Post Image Logics -->
 {% assign rss_item_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if post.image %}
@@ -237,9 +218,7 @@
         {% assign rss_item_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of RSS Feed Post Image Logics -->
 
-<!-- Home Hero Image Logics -->
 {% assign featured_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if featured.image %}
@@ -262,9 +241,7 @@
         {% assign featured_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of Home Hero Image Logics -->
 
-<!-- Home Post Image Logics -->
 {% assign home_post_image = '' %}
 {% if site.auto_webp_conversion %}
     {% if post.image %}
@@ -287,4 +264,3 @@
         {% assign home_post_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
     {% endif %}
 {% endif %}
-<!-- End of Home Post Image Logics -->
