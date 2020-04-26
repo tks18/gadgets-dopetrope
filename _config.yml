@@ -18,7 +18,7 @@ paginate: 21
 
 # CDN and Image Settings
 cdn: https://cdn.statically.io/img/
-image: gadgets.dopetrope.tk/assets/images/
+image: gadgets.dopetrope.tk/assets/img/
 
 # Thumbnail Quality Settings
 height_thumbnail: 580
