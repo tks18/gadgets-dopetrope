@@ -109,7 +109,7 @@
             {% assign recommendation_image = recommendation.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
         {% endif %}
     {% else %}
-        {% assign recommendation_image = "off.jpg" |  | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width | append: "&h=" | append: site.height | append: "&f=auto" %}
+        {% assign recommendation_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width | append: "&h=" | append: site.height | append: "&f=auto" %}
     {% endif %}
 {% else %}
     {% if recommendation.image %}
