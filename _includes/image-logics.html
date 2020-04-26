@@ -3,22 +3,12 @@
 {% if site.auto_webp_conversion %}
     {% if author.photo %}
         {% if author.photo contains "https://" %}
-            {% assign author_photo = author.photo | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
+            {% assign author_photo = author.photo | remove: "https://" | prepend: site.cdn %}
         {% else %}
-            {% assign author_photo = author.photo | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
+            {% assign author_photo = author.photo | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn %}
         {% endif %}
     {% else %}
-        {% assign author_photo = "user.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
-    {% endif %}
-{% else %}
-    {% if author.photo %}
-        {% if author.photo contains "https://" %}
-            {% assign author_photo = author.photo | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% else %}
-            {% assign author_photo = author.photo | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% endif %}
-    {% else %}
-        {% assign author_photo = "user.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
+        {% assign author_photo = "user.jpg" | prepend: site.image | prepend: site.cdn %}
     {% endif %}
 {% endif %}
 <!-- End of Author Image Related Logics -->
@@ -116,7 +106,7 @@
         {% if recommendation.image contains "https://" %}
             {% assign recommendation_image = recommendation.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
-            {% assign recommendation_image = recommendation.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
+            {% assign recommendation_image = recommendation.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% endif %}
     {% else %}
         {% assign recommendation_image = "off.jpg" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
