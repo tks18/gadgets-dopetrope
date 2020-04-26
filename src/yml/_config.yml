@@ -14,6 +14,9 @@
 # Advanced Settings
 #=include advanced.yml
 
+# Image Quality and CDN Settings
+#=include image_config.yml
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

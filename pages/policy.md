@@ -5,13 +5,13 @@ footer: false
 date: '2019-09-07 00:00:00'
 title: Privacy Policy
 permalink: /privacypolicy/
-description: Privacy Policy of Read Write Tech ©️.
+description: Privacy Policy of Gadgets by Dopetrope ©️.
 ---
 
 # Privacy Policy
 #### Last Updated November 14,2019
 
-Thank You for Choosing to be a Part of  our Community at Read Write Tech©️ ("<b>Company</b>", "<b>We</b>", "<b>us</b>" or "<b>our</b>"). We are Committed to Protecting your Personal Information and Your Right to Privacy. If you have any questions or concerns about our policy, or our Practices with regards to your personal information, please contact us at [tksudharshan@readwritetech.tk](mailto:tksudharshan@readwritetech.tk).
+Thank You for Choosing to be a Part of  our Community at Gadgets by Dopetrope©️ ("<b>Company</b>", "<b>We</b>", "<b>us</b>" or "<b>our</b>"). We are Committed to Protecting your Personal Information and Your Right to Privacy. If you have any questions or concerns about our policy, or our Practices with regards to your personal information, please contact us at [tksudharshan@readwritetech.tk](mailto:tksudharshan@readwritetech.tk).
 
 When You Visit Our Website [https://readwritetech.tk](https://readwritetech.tk), and use our services, you trust us with your personal information. We take your privacy very seriously. In this Privacy Policy, We Describe our Privacy Policy. We seek to Explain to you in the clearest wau possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read throught it carefully, as it is important. If there are any terms in this privacy policy that you do not agree with, Please discontinue use of our Sites and our Services.
 
@@ -151,7 +151,7 @@ _We may update this Privacy Policy from time to time. The Updated Version will b
 
 _If You Have Questions or Comments about this policy, You may email us at [tksudharshan@readwritetech.tk](mailto:tksudharshan@readwritetech.tk) or by post to:_
 
-**Read Write Tech.©️ <br/>
+**Gadgets by Dopetrope.©️ <br/>
 Author: Sudharshan TK <br/>
 No: 15/27, <br/>
 Sunkuwar Street, Triplicane, <br/>
