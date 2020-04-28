@@ -4,7 +4,7 @@ backend:
 media_folder: "assets/img/uploads"
 site_url: https://gadgets.dopetrope.tk
 display_url: https://gadgets.dopetrope.tk
-logo_url: https://gadgets.dopetrope.tk/assets/img/icons/apple-touch-icon-152x152.png
+logo_url: https://gadgets.dopetrope.tk/assets/img/blog-image.png
 publish_mode: editorial_workflow
 collections:
   - label: "Category"
