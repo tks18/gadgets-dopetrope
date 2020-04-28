@@ -35,6 +35,7 @@ layout: main
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
         {% for post in posts offset: offset %}
+        {% include image-logics.html %}
         <article class="box-item">
             <span class="category">
                 <a href="{{ site.baseurl }}/category/{{ post.category }}">

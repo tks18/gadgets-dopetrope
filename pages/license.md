@@ -5,7 +5,7 @@ footer: false
 date: '2019-09-07 00:00:00'
 title: License
 permalink: /license/
-description: License of Gadgets by Dopetrope ©️.
+description: License of Gadgets by Gadgets byDopetrope ©️.
 tags:
   - License
   - Readwritetech

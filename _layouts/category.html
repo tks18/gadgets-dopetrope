@@ -29,6 +29,7 @@
                 {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
                 {% for post in posts %}
                 {% if post.category == page.slug %}
+                {% include image-logics.html %}
                 <article class="box-item">
                     <span class="category">
                         <a href="{{ site.baseurl }}/category/{{ post.category }}">
@@ -44,7 +45,6 @@
                                 </noscript>
                             </a>
                         </div>
-                        {% endif %}
                         <div class="box-info">
                             <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
                                 {% include date.html date=post.date %}
