@@ -1,10 +1,10 @@
-{% assign format_array ='.jpg,.mp4,.png,.webp..dng,.psd' | remove:' ' | split: ',' %}
+{% assign format_array =".jpg, .mp4, .png, .webp, .dng, .psd" | split: ', ' %}
 {% assign author_photo = '' %}
 {% if site.auto_webp_conversion %}
     {% if author.photo %}
         {% if author.photo contains "https://" %}
             {% assign author_photo = author.photo | remove: "https://" | prepend: site.cdn %}
-        {% elsif author.photo contains format_array %}
+       {% elsif author.photo contains ".png" or if author.photo contains ".jpg" or if author.photo contains ".jpeg" or if author.photo contains ".webp" or if author.photo contains ".gif" %}
             {% assign author_photo = author.photo | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn %}
         {% else %}
             {% assign author_photo = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn %}
@@ -19,7 +19,7 @@
     {% if page.photo %}
         {% if page.photo contains "https://" %}
             {% assign page_photo = page.photo | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% elsif page.photo contains format_array %}
+        {% elsif page.photo contains ".png" or if page.photo contains ".jpg" or if page.photo contains ".jpeg" or if page.photo contains ".webp" or if page.photo contains ".gif" %}
             {% assign page_photo = page.photo | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign page_photo = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
@@ -31,7 +31,7 @@
     {% if page.photo %}
         {% if page.photo contains "https://" %}
             {% assign page_photo = page.photo | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% elsif page.photo contains format_array %}
+        {% elsif page.photo contains ".png" or if featured.image contains ".jpg" or if featured.image contains ".jpeg" or if featured.image contains ".webp" or if featured.image contains ".gif" %}
             {% assign page_photo = page.photo | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign page_photo = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
@@ -46,7 +46,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign head_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if featured.image contains ".jpg" or if featured.image contains ".jpeg" or if featured.image contains ".webp" or if featured.image contains ".gif" %}
             {% assign head_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
         {% else %}
             {% assign head_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
@@ -58,7 +58,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign head_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if page.image contains ".jpg" or if page.image contains ".jpeg" or if page.image contains ".webp" or if page.image contains ".gif" %}
             {% assign head_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
         {% else %}
             {% assign head_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
@@ -73,7 +73,7 @@
     {% if post.image %}
         {% if post.image contains "https://" %}
             {% assign modal_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
-        {% elsif post.image contains format_array %}
+        {% elsif post.image contains ".png" or if post.image contains ".jpg" or if post.image contains ".jpeg" or if post.image contains ".webp" or if post.image contains ".gif" %}
             {% assign modal_image = post.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
         {% else %}
             {% assign modal_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}  
@@ -85,7 +85,7 @@
     {% if post.image %}
         {% if post.image contains "https://" %}
             {% assign modal_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% elsif post.image contains format_array %}
+        {% elsif post.imagee contains ".png" or if post.image contains ".jpg" or if post.image contains ".jpeg" or if post.image contains ".webp" or if post.image contains ".gif" %}
             {% assign modal_image = post.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign modal_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
@@ -100,7 +100,7 @@
     {% if recommendation.image %}
         {% if recommendation.image contains "https://" %}
             {% assign recommendation_image = recommendation.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
-        {% elsif recommendation_image contains format_array %}
+       {% elsif recommendation.image contains ".png" or if recommendation.image contains ".jpg" or if recommendation.image contains ".jpeg" or if recommendation.image contains ".webp" or if recommendation.image contains ".gif" %}
             {% assign recommendation_image = recommendation.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
         {% else %}
             {% assign recommendation_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
@@ -112,7 +112,7 @@
     {% if recommendation.image %}
         {% if recommendation.image contains "https://" %}
             {% assign recommendation_image = recommendation.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% elsif recommendation_image contains format_array %}
+       {% elsif recommendation.image contains ".png" or if recommendation.image contains ".jpg" or if recommendation.image contains ".jpeg" or if recommendation.image contains ".webp" or if recommendation.image contains ".gif" %}
             {% assign recommendation_image = recommendation.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign recommendation_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
@@ -127,7 +127,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign categoryhero_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if page.image contains ".jpg" or if page.image contains ".jpeg" or if page.image contains ".webp" or if page.image contains ".gif" %}
             {% assign categoryhero_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
         {% else %}
             {% assign categoryhero_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
@@ -139,7 +139,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign categoryhero_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if page.image contains ".jpg" or if page.image contains ".jpeg" or if page.image contains ".webp" or if page.image contains ".gif" %}
             {% assign categoryhero_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
         {% else %}
             {% assign categoryhero_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
@@ -154,7 +154,7 @@
     {% if post.image %}
         {% if post.image contains "https://" %}
             {% assign category_post_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
-        {% elsif post.image contains format_array %}
+        {% elsif post.image contains ".png" or if post.image contains ".jpg" or if post.image contains ".jpeg" or if post.image contains ".webp" or if post.image contains ".gif" %}
             {% assign category_post_image = post.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
         {% else %}
             {% assign category_post_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
@@ -166,7 +166,7 @@
     {% if post.image %}
         {% if post.image contains "https://" %}
             {% assign category_post_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% elsif post.image contains format_array %}
+        {% elsif post.image contains ".png" or if post.image contains ".jpg" or if post.image contains ".jpeg" or if post.image contains ".webp" or if post.image contains ".gif" %}
             {% assign category_post_image = post.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign category_post_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
@@ -181,7 +181,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign postmain_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if page.image contains ".jpg" or if page.image contains ".jpeg" or if page.image contains ".webp" or if page.image contains ".gif" %}
             {% assign postmain_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
         {% else %}
             {% assign postmain_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
@@ -193,7 +193,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign postmain_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if page.image contains ".jpg" or if page.image contains ".jpeg" or if page.image contains ".webp" or if page.image contains ".gif" %}
             {% assign postmain_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
         {% else %}
             {% assign postmain_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
@@ -208,7 +208,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign postfeatured_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail| append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if page.image contains ".jpg" or if page.image contains ".jpeg" or if page.image contains ".webp" or if page.image contains ".gif" %}
             {% assign postfeatured_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
         {% else %}
             {% assign postfeatured_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
@@ -220,7 +220,7 @@
     {% if page.image %}
         {% if page.image contains "https://" %}
             {% assign postfeatured_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% elsif page.image contains format_array %}
+        {% elsif page.image contains ".png" or if page.image contains ".jpg" or if page.image contains ".jpeg" or if page.image contains ".webp" or if page.image contains ".gif" %}
             {% assign postfeatured_image = page.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign postfeatured_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
@@ -235,7 +235,7 @@
     {% if featured.image %}
         {% if featured.image contains "https://" %}
             {% assign featured_image = featured.image| remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
-        {% elsif featured.image contains format_array %}
+        {% elsif featured.image contains ".png" or if featured.image contains ".jpg" or if featured.image contains ".jpeg" or if featured.image contains ".webp" or if featured.image contains ".gif" %}
             {% assign featured_image = featured.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
         {% else %}
             {% assign featured_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
@@ -247,7 +247,7 @@
     {% if featured.image %}
         {% if featured.image contains "https://" %}
             {% assign featured_image = featured.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-        {% elsif featured.image contains format_array %}
+        {% elsif featured.image contains ".png" or if featured.image contains ".jpg" or if featured.image contains ".jpeg" or if featured.image contains ".webp" or if featured.image contains ".gif" %}
             {% assign featured_image = featured.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign featured_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
@@ -262,7 +262,7 @@
     {% if post.image %}
         {% if post.image contains "https://" %}
             {% assign home_post_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
-        {% elsif post.image contains format_array %}
+        {% elsif post.image contains ".png" or if post.image contains ".jpg" or if post.image contains ".jpeg" or if post.image contains ".webp" or if post.image contains ".gif" %}
             {% assign home_post_image = post.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
         {% else %}
             {% assign home_post_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
@@ -274,7 +274,7 @@
     {% if post.image %}
         {% if post.image contains "https://" %}
             {% assign home_post_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
-         {% elsif post.image contains format_array %}
+         {% elsif post.image contains ".png" or if post.image contains ".jpg" or if post.image contains ".jpeg" or if post.image contains ".webp" or if post.image contains ".gif" %}
             {% assign home_post_image = post.image | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
         {% else %}
             {% assign home_post_image = "notfound.png" | remove: "gadgets.dopetrope.tk/assets/img/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_thumbnail %}
