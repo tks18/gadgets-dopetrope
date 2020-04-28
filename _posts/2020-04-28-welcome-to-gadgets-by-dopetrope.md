@@ -1,5 +1,5 @@
 ---
-date: 2020-04-28 15:42:51
+date: 2020-04-28 15:10:00
 layout: post
 title: Welcome to Gadgets by Dopetrope
 subtitle: A Spin-off Website from Dopetrope for Gadget News
