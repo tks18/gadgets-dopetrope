@@ -48,7 +48,6 @@ google_analytics: "UA-156929545-1"
 language: "en"
 
 
-# Image Quality and CDN Settings
 # CDN and Image Settings
 cdn: https://cdn.statically.io/img/
 image: gadgets.dopetrope.tk/assets/img/
@@ -56,6 +55,8 @@ height_thumbnail: 580
 width_thumbnail: 920
 height_post: 1080
 width_post: 1920
+width_home_featured_thumbnail: 810
+height_home_featured_thumbnail: 300
 auto_webp_conversion: true
 
 
